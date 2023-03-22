@@ -12,9 +12,12 @@
 
 
 $(document).ready(function() {
-    setTimeout(function(){
-        $("#dismissible.style-scope.ytd-rich-shelf-renderer").remove();
-
-        console.log("REMOVED SHORTS SHELF");
-    }, 1000);
+    setInterval(remove, 1000);
 });
+
+function remove(){
+    if($("#dismissible.style-scope.ytd-rich-shelf-renderer").length){
+        $("#dismissible.style-scope.ytd-rich-shelf-renderer").remove();
+        console.log("REMOVED SHORTS SHELF");
+    }
+}
