@@ -32,10 +32,10 @@ function remove(){
 async function apiRequest(){
     const options = {
         method: 'POST',
-        mode: 'cors',
         headers: {
             'access-control-allow-origin': '*',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token
         },
         body: JSON.stringify({ "action":"add" })
     };
