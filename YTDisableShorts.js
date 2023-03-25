@@ -35,7 +35,7 @@ async function apiRequest(){
         headers: {
             'access-control-allow-origin': '*',
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + token
+            'Authorization': 'Bearer '
         },
         body: JSON.stringify({ "action":"add" })
     };
